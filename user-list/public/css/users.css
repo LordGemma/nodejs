@@ -69,11 +69,23 @@
 }
 
 .card__actions .card-button.card__actions-edit {
-    background: green;
+    border-color: green;
+    color: green;
+    transition: all .3s linear;
+}
+
+.card__actions .card-button.card__actions-edit:hover {
     color: white;
+    background: green;
 }
 
 .card__actions .card-button.card__actions-delete {
-    background: red;
+    border-color: red;
+    color: red;
+    transition: all .3s linear;
+}
+
+.card__actions .card-button.card__actions-delete:hover {
     color: white;
+    background: red;
 }

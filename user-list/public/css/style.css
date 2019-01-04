@@ -60,6 +60,7 @@ header nav ul {
     list-style: none;
     padding: 0;
     display: flex;
+    justify-content: flex-end;
 }
 
 header nav ul li {
@@ -91,7 +92,8 @@ form {
     background: #ededed;
     margin: auto;
     border-radius: 4px;
-    box-shadow: 0 0 5px #b3b1b1;
+    border: 2px solid #dcdada;
+    box-shadow: 0 0 0 2px #c1bebe;
 }
 
 .form-control {
@@ -120,15 +122,16 @@ form {
     border-radius: 4px;
     padding: 5px 10px;
     background: white;
-    border: 1px solid rgb(216, 216, 216);
-    box-shadow: 0 0 5px #b3b1b1;
+    border: 2px solid #dcdada;
+    box-shadow: 0 0 0 2px #c1bebe;
     color: #333;
 }
 
 .btn {
     margin-top: 15px;
     padding: 5px 10px;
-    border: 1px solid green;
+    border: 1px solid #0fca0f;
+    box-shadow: 0 0 0 1px green;
     display: inline-block;
     color: green;
     background: white;

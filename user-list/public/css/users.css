@@ -6,8 +6,8 @@
 .card {
     background-color: #ededed;
     padding: 5px;
-    border: 1px solid #dcdada;
-    box-shadow: 0 0 10px #b3b1b1;
+    border: 2px solid #dcdada;
+    box-shadow: 0 0 0 2px #c1bebe;
     border-radius: 4px;
     margin-right: 15px;
     margin-bottom: 15px;
@@ -24,6 +24,8 @@
     border-radius: 50%;
     max-width: 128px;
     overflow: hidden;
+    border: 2px solid #dcdada;
+    box-shadow: 0 0 0 2px #c1bebe;
 }
 
 .user-item .card__image img {
@@ -52,40 +54,13 @@
     margin-left: auto;
 }
 
-.card__actions .card-button {
-    text-decoration: none;
-    padding: 5px 10px;
-    background: white;
-    border: 1px solid rgb(216, 216, 216);
-    display: inline-block;
-    color: #333;
-    margin-bottom: 10px;
-    text-align: center;
-    line-height: 12px;
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.card__actions .card-button.card__actions-edit {
-    border-color: green;
-    color: green;
-    transition: all .3s linear;
-}
-
-.card__actions .card-button.card__actions-edit:hover {
-    color: white;
-    background: green;
-}
-
-.card__actions .card-button.card__actions-delete {
+.card__actions .card__actions-delete {
+    box-shadow: 0 0 0 1px #ad0505;
     border-color: red;
-    color: red;
-    transition: all .3s linear;
+    color: #ad0505;
 }
 
-.card__actions .card-button.card__actions-delete:hover {
+.card__actions .card__actions-delete:hover {
     color: white;
-    background: red;
+    background: #ad0505;
 }

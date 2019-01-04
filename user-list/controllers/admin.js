@@ -26,7 +26,7 @@ exports.postAddUser = (req, res, next) => {
 
 exports.getUsers = (req, res, next) => {
     Users.fetchAll(users => {
-        res.render('admin/users', {
+        res.render('admin/user-list', {
             users: users,
             pageTitle: 'Admin Users',
             path: '/admin/users'

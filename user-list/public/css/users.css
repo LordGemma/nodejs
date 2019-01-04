@@ -1,0 +1,31 @@
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    background-color: #ededed;
+    padding: 5px;
+    border: 1px solid #dcdada;
+    box-shadow: 0 0 10px #b3b1b1;
+    border-radius: 4px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    width: 445px;
+}
+
+.user-item .card__image {
+    margin-right: 10px;
+    border-radius: 50%;
+    max-width: 128px;
+    overflow: hidden;
+}
+
+.user-item .card__image img {
+    max-width: 100%;
+}

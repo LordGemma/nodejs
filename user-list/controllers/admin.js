@@ -11,6 +11,7 @@ exports.getAddUser = (req, res, next) => {
 };
 
 exports.postAddUser = (req, res, next) => {
+    const id = (Math.random() * Math.random()).toString().split(".")[1];
     const firstName = req.body.firstName;
     const avatar = req.body.avatar;
     const lastName = req.body.lastName;
@@ -19,7 +20,7 @@ exports.postAddUser = (req, res, next) => {
     const email = req.body.email;
     const phone = req.body.phone;
 
-    const user = new Users(firstName, lastName, avatar, company, jobTitle, email, phone);
+    const user = new Users(id, firstName, lastName, avatar, company, jobTitle, email, phone);
     user.save();
     res.redirect('/users');
 };

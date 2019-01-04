@@ -18,7 +18,8 @@ const getUsersFromFile = cb => {
 };
 
 module.exports = class Users {
-  constructor(firstName, lastName, avatar, company, jobTitle, email, phone) {
+  constructor(id, firstName, lastName, avatar, company, jobTitle, email, phone) {
+    this.id = id;
     this.firstName = firstName;
     this.avatar = avatar;
     this.lastName = lastName;
